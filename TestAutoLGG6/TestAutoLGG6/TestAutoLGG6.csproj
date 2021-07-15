@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>true</Prefer32Bit>
+    <OutputPath>..\..\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="KAutoHelper">
+      <HintPath>..\..\KAutoHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
